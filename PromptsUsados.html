@@ -1,0 +1,64 @@
+///1. Prompt general del proyecto
+
+Crea un sistema hospitalario web completo llamado "Sistema-Hospitalario", desarrollado con HTML5, CSS3 y JavaScript puro.
+ Debe funcionar localmente en el navegador y utilizar LocalStorage como almacenamiento de datos. El sistema debe tener tres
+  tipos de usuarios: Administrador, Doctor y Paciente. Organiza el proyecto en archivos separados y mantenibles.
+
+2. Prompt para la estructura
+
+Genera la estructura completa de un proyecto web llamado Sistema-Hospitalario con los archivos index.html, login.html,
+ registro.html, admin.html, doctor.html y paciente.html; una carpeta css con styles.css; una carpeta js con app.js, auth.js,
+ usuarios.js, citas.js, doctor.js y storage.js; además de assets/img, assets/icons, README.md, .gitignore y prompts.pdf.
+ Mantén exactamente esta estructura.
+
+3. Prompt para las interfaces HTML
+
+Crea todas las páginas HTML del Sistema Hospitalario: página principal, inicio de sesión, registro de pacientes,
+ panel administrativo, panel médico y panel del paciente. Utiliza Bootstrap para obtener una interfaz moderna, 
+ responsive y profesional. Cada página debe tener los formularios, tablas, botones, tarjetas y elementos necesarios
+  para conectarse posteriormente con JavaScript.
+
+4. Prompt para autenticación
+
+Desarrolla auth.js para el Sistema Hospitalario utilizando JavaScript y LocalStorage.
+ Implementa inicio de sesión, cierre de sesión, registro de pacientes, manejo de sesiones
+  y control de acceso por roles. El sistema debe identificar Administrador, Doctor y Paciente
+   y redirigir automáticamente cada usuario a su panel correspondiente.
+
+5. Prompt para almacenamiento
+
+Desarrolla storage.js como una capa de persistencia para el Sistema Hospitalario utilizando LocalStorage.
+ Crea funciones CRUD para usuarios, citas y disponibilidad médica. Inicializa automáticamente usuarios de
+  prueba para Administrador, Doctor y Paciente. Las funciones deben permitir obtener, guardar, agregar, actualizar y eliminar registros.
+
+6. Prompt para gestión de usuarios
+
+Desarrolla usuarios.js para el panel administrativo de un Sistema Hospitalario. Debe permitir listar usuarios,
+ crear usuarios, editar usuarios, eliminar usuarios, buscar por nombre o correo y mostrar estadísticas de
+  pacientes y doctores. Utiliza modales Bootstrap y SweetAlert2 para las interacciones. Evita utilizar prompt() para editar información.
+
+
+7. Prompt para módulo de citas
+
+Desarrolla un módulo completo citas.js para un Sistema Hospitalario. Los pacientes deben poder solicitar y cancelar citas;
+ los administradores deben poder visualizar, confirmar, cancelar y marcar citas como atendidas; los doctores deben visualizar 
+ sus propias citas. Implementa validación de disponibilidad, fecha, hora, doctor y prevención de citas duplicadas. Utiliza LocalStorage
+  y SweetAlert2.
+
+8. Prompt para módulo del doctor
+
+Desarrolla doctor.js para el panel médico del Sistema Hospitalario. El doctor debe poder administrar su disponibilidad indicando fecha,
+ hora inicial y hora final, visualizar sus citas, conocer los pacientes programados para el día y consultar estadísticas de citas pendientes
+  y atendidas. Integra completamente el módulo con storage.js y citas.js.
+
+9. Prompt para integración general
+
+Desarrolla app.js como controlador principal del Sistema Hospitalario. Integra storage.js, auth.js, usuarios.js, citas.js y doctor.js
+. Al cargar cualquier página debe inicializar el sistema, verificar la sesión, identificar el rol del usuario, actualizar el dashboard
+ correspondiente y cargar automáticamente los datos necesarios. Incluye utilidades para mensajes, fechas, reloj, respaldo y restauración de datos.
+
+10. Prompt para revisión y prueba final
+
+Revisa integralmente el proyecto Sistema-Hospitalario antes de entregarlo. Comprueba que todos los HTML carguen correctamente CSS, Bootstrap,
+ SweetAlert2 y los archivos JavaScript en el orden adecuado. Verifica el flujo completo Registro → Login → Panel según rol 
+ → Gestión de usuarios/citas → Cierre de sesión. Corrige errores de integración
