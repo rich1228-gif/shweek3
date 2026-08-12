@@ -1,0 +1,408 @@
+/* ==========================================================
+   SISTEMA HOSPITALARIO
+   styles.css
+========================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#f4f7fb;
+
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+
+    color:#343a40;
+
+}
+
+/*=================================
+NAVBAR
+==================================*/
+
+.navbar{
+
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+
+}
+
+.navbar-brand{
+
+    font-size:1.3rem;
+
+    font-weight:bold;
+
+}
+
+/*=================================
+HERO
+==================================*/
+
+.hero{
+
+    padding:90px 0;
+
+}
+
+.hero h1{
+
+    font-size:3rem;
+
+    font-weight:700;
+
+}
+
+.hero p{
+
+    font-size:1.2rem;
+
+    color:#666;
+
+}
+
+/*=================================
+CARDS
+==================================*/
+
+.card{
+
+    border:none;
+
+    border-radius:12px;
+
+    transition:.25s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.12);
+
+}
+
+.card-header{
+
+    font-weight:600;
+
+}
+
+/*=================================
+BOTONES
+==================================*/
+
+.btn{
+
+    border-radius:8px;
+
+    transition:.25s;
+
+}
+
+.btn-primary:hover{
+
+    transform:scale(1.02);
+
+}
+
+.btn-success:hover{
+
+    transform:scale(1.02);
+
+}
+
+.btn-danger:hover{
+
+    transform:scale(1.02);
+
+}
+
+/*=================================
+FORMULARIOS
+==================================*/
+
+.form-control{
+
+    border-radius:8px;
+
+    padding:10px;
+
+}
+
+.form-control:focus{
+
+    box-shadow:0 0 8px rgba(13,110,253,.25);
+
+}
+
+.form-select{
+
+    border-radius:8px;
+
+}
+
+/*=================================
+SIDEBAR
+==================================*/
+
+.list-group{
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+}
+
+.list-group-item{
+
+    border:none;
+
+    padding:16px;
+
+    font-weight:500;
+
+}
+
+.list-group-item:hover{
+
+    background:#0d6efd;
+
+    color:white;
+
+}
+
+.list-group-item.active{
+
+    background:#0d6efd;
+
+    border:none;
+
+}
+
+/*=================================
+TABLAS
+==================================*/
+
+.table{
+
+    margin-bottom:0;
+
+}
+
+.table thead{
+
+    background:#0d6efd;
+
+    color:white;
+
+}
+
+.table-hover tbody tr:hover{
+
+    background:#edf5ff;
+
+}
+
+/*=================================
+BADGES
+==================================*/
+
+.badge{
+
+    font-size:.85rem;
+
+    padding:7px 12px;
+
+}
+
+/*=================================
+ESTADÍSTICAS
+==================================*/
+
+.stat-card{
+
+    color:white;
+
+    padding:20px;
+
+    border-radius:12px;
+
+}
+
+.stat-card h2{
+
+    font-size:2.3rem;
+
+    margin-top:10px;
+
+}
+
+/*=================================
+MODALES
+==================================*/
+
+.modal-content{
+
+    border-radius:12px;
+
+}
+
+.modal-header{
+
+    background:#0d6efd;
+
+    color:white;
+
+}
+
+.btn-close{
+
+    filter:invert(1);
+
+}
+
+/*=================================
+FOOTER
+==================================*/
+
+footer{
+
+    margin-top:60px;
+
+    padding:25px;
+
+}
+
+/*=================================
+LOGIN
+==================================*/
+
+.login-card{
+
+    margin-top:60px;
+
+}
+
+/*=================================
+REGISTRO
+==================================*/
+
+#registroForm{
+
+    padding-top:10px;
+
+}
+
+/*=================================
+DASHBOARD
+==================================*/
+
+.dashboard-title{
+
+    font-weight:bold;
+
+    margin-bottom:25px;
+
+}
+
+/*=================================
+TABLAS RESPONSIVE
+==================================*/
+
+.table-responsive{
+
+    overflow:auto;
+
+}
+
+/*=================================
+ICONOS
+==================================*/
+
+.bi{
+
+    margin-right:5px;
+
+}
+
+/*=================================
+ANIMACIONES
+==================================*/
+
+.fade-in{
+
+    animation:fade .5s;
+
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(10px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*=================================
+RESPONSIVE
+==================================*/
+
+@media(max-width:992px){
+
+.hero{
+
+padding:50px 0;
+
+}
+
+.hero h1{
+
+font-size:2.3rem;
+
+}
+
+.list-group{
+
+margin-bottom:25px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.card{
+
+margin-bottom:20px;
+
+}
+
+.navbar-brand{
+
+font-size:1rem;
+
+}
+
+.hero h1{
+
+font-size:2rem;
+
+}
+
+}
